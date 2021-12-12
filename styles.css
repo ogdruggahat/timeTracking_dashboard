@@ -5,11 +5,20 @@ body{
     font-weight: 400;
     padding: 10% 5%;
 }
+/* text */
 h1{
     font-weight: 300;
     font-size: 40px;
     line-height: 47,4px;
     width: 80%;
+    margin-top: 0px;
+}
+h2{
+    font-size: 56px;
+    line-height: 66.36px;
+    font-style: normal;
+    font-weight: 300;
+    margin: 0;
 }
 h3{
     font-size: 18px;
@@ -19,6 +28,14 @@ h3{
 p{
     color: #BBC0FF;
 }
+.user-card h3, .user-card p{
+    margin-bottom: 0;
+    font-weight: 200;
+}
+.user-card p{
+    margin-top: 43px;
+}
+/* main */
 .grid{
     display: grid;
     grid-template-columns: repeat(4,255px);
@@ -35,7 +52,7 @@ p{
     z-index: -2;
 }
 .background{
-    border-radius: 3%;
+    border-radius: 4%;
     background-color: #5747EA;
     position: absolute;
     top: 0;
@@ -50,10 +67,75 @@ p{
     position: absolute;
     color:#7078C9;
 }
-.user-card h3, .user-card p{
-    margin-bottom: 0;
-    font-weight: 200;
+.work{
+    background-color: #FF8B64;
 }
+.play{
+    background-color: #55C2E6;
+}
+.study{
+    background-color: #FF5E7D;
+}
+.exercise{
+    background-color: #4BCF82;
+}
+.social{
+    background-color: #7335D2;
+}
+.self-care{
+    background-color: #F1C75B;
+}
+.square{
+width: 255px;
+height: 244px;
+border-radius: 4%;
+position: relative;
+
+}
+.padding{
+    padding: 10%;
+}
+.flex{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+}
+.flex h3{
+    justify-self: start;
+    margin-top: 0;
+}
+i{
+    margin-top: 0;
+    justify-self: end;
+    align-self: center;
+    color: #BBC0FF;
+}
+i:hover {
+    color: #ffff;
+}
+
+.square img{
+    position: absolute;
+    right: 10px;
+    top: -10px;
+}
+.front{
+    width: 255px;
+    height: 200px;
+    border-radius: 4%;
+    background-color: #1C204B;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+.front:hover{
+    background-color: #33397A;
+}
+
+.front h3, .front i{
+    display: inline;
+}
+
 
 .user-card img{
     width:78px;
